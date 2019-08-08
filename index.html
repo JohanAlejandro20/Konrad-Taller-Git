@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html>f
+<html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="index.css">
     <script src='main.js'></script>
 </head>
 <body>
-    
+    <h1>MVC</h1>
+    <p>Es un patron arquitectónico en donde separa diferentes responsabilidades en un proyecto u aplicación.
+       Su nombre se compone de sus siglas M(modelo), V(vista) y C(controlador) estas cumplen un rol importante
+       en este patro.A continuación se expicará la funcionalidad de cada una de estas. 
+    </p>
+    <h2 class="titulos"> <strong>Modelo</strong></h2> 
+    <p>Es el que gestina consulta y actualiza los datos en el proyecto u aplicación. <br>
+       El modelo debe estar completamente independiente de la vista. <br>
+       Ejemplo: <br>
+       si en algun momento la aplicación la cual se esta relizando via web se requiere pasarla a una aplicacion para IOS,
+       esto no debe afectar en lo absoluto a la vista ya que una es autónoma de la otra.
+       <h3>Funciones:</h3>
+        <ul>
+            <li>Conectarse a la base de datos</li>
+            <li>Reaizar alguna validacion con respecto a la base de datos</li>
+            <li>Conectarse con servicios web</li>
+        </ul>
+    </p>
+
+    <h2 class="titulos">Vista</h2>
+    <p>Es la informacion que se le presenta de forma amigable al usuario para que este puede interactuar con la
+        aplicacion de modo interactivo. <br>
+       Asi como hablamos anteriormente del Modelo, la vista tiene que ser totalmente independiente del modelo. <br>
+       Ejemplo: <br>
+       Una interfaz de usuario.
+       <h3>Funciones:</h3>
+       <ul>
+           <li>Definir la estructura y aparencia de los datos en una pantalla</li>
+       </ul>
+    </p>
+
+    <h2 class="titulos">Controlador</h2>
+    <p>Se encarga de la comunicacion entre el modelo y la vista y vs.
+        <h3>Funciones</h3>
+        <ul>
+            <li>Procesar la información que le entrega la vista a algo que pueda entender el modelo.</li>
+            <li>Procesar la información que le otorga el modelo para que la vista la pueda mostrar.</li>
+            <li>Llevar acabo la navegacion de una aplicacion tanto web como movil</li>
+        </ul>
+    </p>
 </body>
-</html>>
+</html>
